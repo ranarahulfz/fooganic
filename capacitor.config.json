@@ -1,0 +1,8 @@
+{
+  "appId": "io.ionic.starter",
+  "appName": "fooganic",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "build",
+  "cordova": {}
+}

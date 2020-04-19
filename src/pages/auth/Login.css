@@ -1,0 +1,108 @@
+ion-content ion-toolbar {
+    --background: translucent;
+  }
+
+  @font-face {
+    font-family: 'Quicksand Extra Light';
+    src: url('../../assets/fonts/Quicksand-VariableFont_wght.ttf');
+    font-weight: 200;
+  }
+
+  @font-face {
+    font-family: 'Quicksand';
+    src: url('../../assets/fonts/Quicksand-VariableFont_wght.ttf');
+    font-weight: 300;
+  }
+
+  @font-face {
+    font-family: 'Quicksand Normal';
+    src: url('../../assets/fonts/Quicksand-VariableFont_wght.ttf');
+    font-weight: 400;
+  }
+
+  @font-face {
+    font-family: 'Quicksand Medium';
+    src: url('../../assets/fonts/Quicksand-VariableFont_wght.ttf');
+    font-weight: 500;
+  }
+
+  @font-face {
+    font-family: 'Quicksand Bold';
+    src: url('../../assets/fonts/Quicksand-VariableFont_wght.ttf');
+    font-weight: 600;
+  }
+
+  @font-face {
+    font-family: 'Quicksand Extra Bold';
+    src: url('../../assets/fonts/Quicksand-VariableFont_wght.ttf');
+    font-weight: 800;
+  }
+
+  .shape-one {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  
+  .shape-two {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0;
+  }
+
+  .shape-three {
+    margin: auto;
+    position: absolute;
+    left: 0; right: 0; bottom: 0;
+  } 
+  
+  .main-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .title-text {
+    font-family: 'Quicksand Bold';
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    color: #333;
+  }
+
+  .logo-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .login-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .input-field {
+    border: 0;
+    margin-top: 12px;
+    padding: 4px 24px;
+    border: 1px solid #999;
+    border-radius: 18px;
+    outline: none;
+
+    font-family: 'Quicksand Medium';
+    font-size: 14px;
+    color: #333;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  

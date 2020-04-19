@@ -1,4 +1,5 @@
 import * as firebase from "firebase";
+import { toast } from "./toast";
 
 const config = {
   apiKey: "AIzaSyB3KRXHxmqHERWBz7bRKQqC8JOZ2WpvJgg",
@@ -20,13 +21,25 @@ export async function loginUser(username: string, password: string) {
     const res = await firebase
       .auth()
       .signInWithEmailAndPassword(email, password);
-      console.log(res);
-      return true;
+      console.log(res)
+      return true
   } catch (error) {
-    console.log(error);
-    return false;
+    toast(error.message, 4000)
+    return false
   }
   // Authenticate with firebase.
   // If present, show dashboard
   // If not, show error
+}
+
+export async function registerUser(username: string, password: string) {
+  const email = `${username}@twentykiwi.com`;
+  try {
+    const res = await firebase.auth().createUserWithEmailAndPassword(email,password)
+    console.log(res)
+    return true
+  } catch(error) {
+    toast(error.message, 4000)
+    return false
+  }
 }

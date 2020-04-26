@@ -1,5 +1,16 @@
 import React  from 'react';
-import { IonContent, IonPage, IonImg, IonTitle, IonGrid, IonRow, IonCol, IonCard, IonText } from '@ionic/react';
+import {
+    IonContent,
+    IonPage,
+    IonImg,
+    IonTitle,
+    IonGrid,
+    IonRow,
+    IonCol,
+    IonCard,
+    IonText,
+    IonButton
+} from '@ionic/react';
 import './InitialScreen.css';
 import Image1 from '../../assets/icons/energy-drink.svg';
 
@@ -21,7 +32,17 @@ const InitialScreen: React.FC = () => {
               </div>
               <div className="btn-container">
                   <div className="btn-cont">
-                        <button className="skip-btn">SKIP</button>
+                      <IonButton
+                          className="btn skip-btn"
+                          color="secondary"
+                          size="small"
+                          shape="round"
+                          expand="block"
+                          fill="outline"
+                          routerLink="/home"
+                      >
+                          Skip
+                      </IonButton>
                       <div className="grid">
                         <button className="new-acc-btn">Create new Account</button>
                         <button className="signin-btn">Signin</button>

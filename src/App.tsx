@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect, Route } from "react-router-dom";
+import { Route } from "react-router-dom";
 import { IonReactRouter } from "@ionic/react-router";
 import {
   IonApp,
@@ -25,23 +25,22 @@ import '@ionic/react/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+/* Import Routes */
 import Login from './pages/auth/Login';
 import Register from './pages/auth/Register';
-import splashscreen from './pages/splashscreen/SplashScreen';
-import initialscreen from './pages/initialscreen/InitialScreen';
+import InitialScreen from './pages/initialscreen/InitialScreen';
+import Home from './pages/Home';
 
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { construct } from 'ionicons/icons';
 
 // constructor(private splashScreen: SplashScreen){}
-
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route path="/" component={initialscreen} exact />
+        <Route path="/" component={Home} exact />
         <Route path="/login" component={Login} exact />
         <Route path="/register" component={Register} exact />
+        <Route path="/home" component={Home} exact />
       </IonRouterOutlet>
     </IonReactRouter>
   </IonApp>

@@ -1,0 +1,301 @@
+.top-header {
+    width: 100%;
+    padding: 20px 10px;
+    border-bottom: 1px solid #dfdfdf;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-row {
+    margin-left: 5px;
+    font-size: 16px;
+    color: #595959;
+}
+
+.notification {
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.notify-icon {
+    height: 24px;
+    width: 24px;
+    color: #828282;
+}
+
+.top-search {
+    width: 100%;
+    padding: 10px 5px;
+    position: relative;
+}
+
+.search-food {
+    width: 100%;
+    height: 40px;
+    padding: 0 32px;
+    border: 1px solid #dfdfdf;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.search-icon {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    color: #eb0028;
+}
+
+.menu-icon {
+    width: 22px;
+    height: 22px;
+    position: absolute;
+    color: #eb0028;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.main-category {
+    width: 100%;
+    height: 80px;
+    display: flex;
+}
+
+.product-category {
+    overflow-x: scroll;
+    padding: 5px;
+}
+
+.product-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.product-item {
+    flex-shrink: 0;
+    margin: 12px;
+}
+
+.product-card {
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(234, 130, 212, 0.2);
+}
+
+.product-image {
+    height: 60px;
+    border-radius: 8px;
+}
+
+.product-name {
+    text-align: center;
+    margin-top: 5px;
+    font-size: 10px;
+}
+
+.popular-food {
+    padding: 8px;
+}
+
+.popular-food-header {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.popular-food-header-row {
+    font-size: 17px;
+    font-weight: 600;
+    color: #595959;
+}
+
+.popular-food-row-container {
+    overflow-x: scroll;
+}
+
+.popular-food-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.popular-food-item {
+    flex-shrink: 0;
+    margin: 10px;
+}
+
+.popular-food-card {
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(234, 130, 212, 0.2);
+    height: 150px;
+    width: 130px;
+    text-align: center;
+    position: relative;
+}
+
+.popular-food-img-cont {
+    margin-top: 5px;
+}
+
+.popular-food-img {
+    height: 80px;
+}
+
+.nav-icon, .like-icon {
+    height: 14px;
+    color: #eb0028;
+}
+
+.food-nav, .food-like {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(234, 130, 212, 0.2);
+    background-color: #e4e5e6c4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.food-like {
+    position: absolute;
+    top: 2px;
+    right: 4px;
+}
+
+.popular-food-name {
+    margin-top: 4px;
+    padding: 0 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.food-name {
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.food-ratings-price-row {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 6px;
+}
+
+.food-ratings {
+    font-size: 8px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.star-icon {
+    height: 6px;
+}
+
+.numeric-rating {
+    margin-right: 4px;
+}
+
+.numeric-like {
+    margin-left: 4px;
+}
+
+.food-price {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.best-food {
+    padding: 8px;
+}
+
+.best-food-header {
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.best-food-header-row {
+    font-size: 17px;
+    font-weight: 600;
+    color: #595959;
+}
+
+.best-food-row-container {
+    overflow-x: scroll;
+}
+
+.best-food-row {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.best-food-item {
+    flex-shrink: 0;
+    margin: 8px;
+}
+
+.best-food-card {
+    border-radius: 3px;
+    box-shadow: 0 4px 8px rgba(234, 130, 212, 0.2);
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    position: relative;
+}
+
+.best-food-img-cont {
+    margin-top: 8px;
+}
+
+.best-food-img {
+    height: 120px;
+}
+
+.best-food-name-cont {
+    margin-top: 8px;
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.best-food-name {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.best-food-ratings-price-row {
+    margin-top: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.best-food-ratings {
+    font-size: 12px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.best-star-icon {
+    height: 10px;
+}
+
+.best-numeric-rating {
+    margin-right: 4px;
+}
+
+.best-numeric-like {
+    margin-left: 4px;
+}

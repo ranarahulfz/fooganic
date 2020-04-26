@@ -10,35 +10,41 @@ import {
   IonTabs
 } from "@ionic/react";
 import { IonReactRouter } from "@ionic/react-router";
-import { ellipse, square, triangle } from "ionicons/icons";
-import User from "./User";
-import Products from "./Products";
+import { locateSharp, personCircleOutline, cartOutline, homeOutline } from "ionicons/icons";
+import Account from "./Account";
 import Cart from "./Cart";
+import Dashboard from "./Dashboard";
 
 /* Theme variables */
 import './Home.css';
+import NearBy from "./NearBy";
 
 const Home: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonTabs>
         <IonRouterOutlet>
-          <Route path="/user" component={User} exact={true} />
-          <Route path="/products" component={Products} exact={true} />
+          <Route path="/account" component={Account} exact={true} />
+          <Route path="/nearby" component={NearBy} exact={true} />
           <Route path="/cart" component={Cart} />
-          <Route path="/" render={() => <Redirect to="/products" />} exact={true} />
+          <Route path="/dashboard" component={Dashboard} />
+          <Route path="/" render={() => <Redirect to="/dashboard" />} exact={true} />
         </IonRouterOutlet>
         <IonTabBar slot="bottom">
-          <IonTabButton tab="products" href="/products">
-            <IonIcon icon={triangle} />
-            <IonLabel>Products</IonLabel>
+          <IonTabButton tab="home" href="/dashboard">
+            <IonIcon icon={homeOutline} />
+            <IonLabel>Home</IonLabel>
           </IonTabButton>
-          <IonTabButton tab="user" href="/User">
-            <IonIcon icon={ellipse} />
+          <IonTabButton tab="nearby" href="/nearby">
+            <IonIcon icon={locateSharp} />
+            <IonLabel>Near By</IonLabel>
+          </IonTabButton>
+          <IonTabButton tab="account" href="/account">
+            <IonIcon icon={personCircleOutline} />
             <IonLabel>User</IonLabel>
           </IonTabButton>
           <IonTabButton tab="cart" href="/cart">
-            <IonIcon icon={square} />
+            <IonIcon icon={cartOutline} />
             <IonLabel>Cart</IonLabel>
           </IonTabButton>
         </IonTabBar>

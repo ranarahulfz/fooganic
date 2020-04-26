@@ -38,23 +38,54 @@ ion-content ion-toolbar {
     font-weight: 800;
   }
 
-  .shape-one {
+  .login-shape-one {
     position: absolute;
     top: 0;
     right: 0;
+    width: 100%;
   }
   
-  .shape-two {
-    margin: auto;
+  .login-shape-two {
     position: absolute;
-    top: 0; left: 0; bottom: 0;
+    left: 0; bottom: 5%;
+    height: 30%;
   }
 
-  .shape-three {
+  .login-shape-three {
     margin: auto;
     position: absolute;
     left: 0; right: 0; bottom: 0;
-  } 
+    width: 50%;
+  }
+
+  .return-icon {
+    font-size: 32px;
+    margin-bottom: 4px;
+  }
+
+  .top-container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  .top-container, .heading, .sub-heading {
+    z-index: 1;
+  }
+
+  .heading {
+    display: block;
+    margin-bottom: 4px;
+
+    font-family: 'Quicksand Bold';
+    font-size: 24px;
+  }
+
+  .sub-heading {
+    font-family: 'Quicksand Bold';
+    font-size: 14px;
+  }
   
   .main-container {
     width: 100%;
@@ -68,7 +99,7 @@ ion-content ion-toolbar {
 
   .title-text {
     font-family: 'Quicksand Bold';
-    font-size: 16px;
+    font-size: 32px;
     font-weight: 500;
     letter-spacing: 2px;
     color: #333;
@@ -82,6 +113,8 @@ ion-content ion-toolbar {
   }
 
   .login-box {
+    width: 100%;
+    padding: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -89,20 +122,23 @@ ion-content ion-toolbar {
   }
 
   .input-field {
+    width: 100%;
     border: 0;
     margin-top: 12px;
-    padding: 4px 24px;
-    border: 1px solid #999;
+    padding: 8px 24px;
+    border: 2px solid #ccc;
     border-radius: 18px;
     outline: none;
 
-    font-family: 'Quicksand Medium';
+    font-family: 'Quicksand Bold';
     font-size: 14px;
     color: #333;
   }
 
   .btn {
     width: 100%;
+    height: 40px;
+    font-family: 'Quicksand Bold';
   }
 
   

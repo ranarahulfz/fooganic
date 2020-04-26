@@ -15,7 +15,7 @@ import {
 } from "@ionic/react";
 import "./Auth.css";
 import Logo from "../../assets/icons/logo.svg";
-import Shape1 from "../../assets/shapes/login_shape_1.svg";
+import Shape1 from "../../assets/shapes/auth_shape_1.svg";
 import Shape2 from "../../assets/shapes/login_shape_2.svg";
 import Shape3 from "../../assets/shapes/login_shape_3.svg";
 import Login from "./Login";

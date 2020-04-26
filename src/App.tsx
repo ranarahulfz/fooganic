@@ -5,7 +5,6 @@ import {
   IonApp,
   IonRouterOutlet,
 } from '@ionic/react';
-import Auth from './pages/auth/Auth';
 
 /* Core CSS required for Ionic components to work properly */
 import '@ionic/react/css/core.css';
@@ -28,12 +27,19 @@ import './theme/variables.css';
 
 import Login from './pages/auth/Login';
 import Register from './pages/auth/Register';
+import splashscreen from './pages/splashscreen/SplashScreen';
+import initialscreen from './pages/initialscreen/InitialScreen';
+
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { construct } from 'ionicons/icons';
+
+// constructor(private splashScreen: SplashScreen){}
 
 const App: React.FC = () => (
   <IonApp>
     <IonReactRouter>
       <IonRouterOutlet>
-        <Route path="/" component={Auth} exact />
+        <Route path="/" component={initialscreen} exact />
         <Route path="/login" component={Login} exact />
         <Route path="/register" component={Register} exact />
       </IonRouterOutlet>

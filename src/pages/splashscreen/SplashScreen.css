@@ -1,0 +1,15 @@
+ion-content ion-toolbar {
+    --background: translucent;
+}
+
+.logo {
+    width: 100%;
+}
+
+.grid {
+    height: 100%;
+}
+
+.row {
+    height: 100%;
+}
